@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+#header-img {
+  width: 80px;
+  padding: 10px 10px;
+}
+.main {
+  position: relative;
+}
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  width: 100%;
+}
+
+#header {
+  text-align: center;
+}
+.text {
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  width: 100%;
+}
+h1 {
+  text-align: center;
+}
+.sign-up-page {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(https://images.unsplash.com/photo-1615716175512-6547ed615375?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
+    no-repeat;
+  background-size: cover;
+}
+
+#form {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.video-page {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#video {
+  text-align: center;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid rgb(180, 178, 178);
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+.features {
+  height: 500px;
+  background: url(https://www.teahub.io/photos/full/276-2762658_4k-ultra-hd-wallpapers-for-pc.jpg)
+    no-repeat;
+  background-size: cover;
+}
+
+footer {
+  background: rgb(200, 200, 200);
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+}
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
