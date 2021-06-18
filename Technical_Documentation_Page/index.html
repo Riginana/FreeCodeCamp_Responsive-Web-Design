@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>React Documentation</header>
+        <h2>Main Concepts</h2>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Hello_world">Hello World</a></li>
+            <li><a class="nav-link" href="#Introducing_JSX">Introducing JSX</a></li>
+            <li><a class="nav-link" href="#Rendering_Elements">Rendering Elements</a></li>
+            <li><a class="nav-link" href="#Components_and_Props">Components and Props</a></li>
+            <li><a class="nav-link" href="#State_and_Lifecycle">State and Lifecycle</a></li>
+            <li><a class="nav-link" href="#Handling_Events">Handling Events</a></li>
+            <li><a class="nav-link" href="#Conditional_Rendering">Conditional Rendering</a></li>
+            <li><a class="nav-link" href="#Lists_and_Keys">Lists and Keys</a></li>
+            <li><a class="nav-link" href="#Forms">Forms</a></li>
+            <li><a class="nav-link" href="#Lifting_State_Up">Lifting State Up</a></li>
+            <li><a class="nav-link" href="#Composition_vs_Inheritance">Composition vs Inheritance</a></li>
+            <li><a class="nav-link" href="#Thinking_in_React">Thinking In React</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    React is a JavaScript library for building user interfaces. Learn what React is all about on our
+                    homepage or in the tutorial.
+                </p>
+                <h3>Try React</h3>
+                <p>
+                    React has been designed from the start for gradual adoption, and you can use as little or as much
+                    React
+                    as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page,
+                    or
+                    start a complex React-powered app, the links in this section will help you get started.
+
+
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Hello_world">
+            <header>Hello World</header>
+            <article>
+                <p>
+                    The smallest React example looks like this:
+                </p>
+                <img src="images/hello_world.png" alt="">
+
+                <p>
+                    It displays a heading saying “Hello, world!” on the page.
+                </p>
+                <h3><a href="https://codepen.io/pen?&editors=0010">Try it on CodePen</a></h3>
+                <ul>
+                    <li>
+                        Click the link above to open an online editor. Feel free to make some changes, and see how they
+                        affect the output. Most pages in this guide will have editable examples like this one.
+                    </li>
+                </ul>
+                <hr>
+                <h1>How to Read This Guide</h1>
+                <p>In this guide, we will examine the building blocks of React apps: elements and components. Once you
+                    master them, you can create complex apps from small reusable pieces.</p>
+
+                <h4>Tip</h4>
+                <p><code>This guide is designed for people who prefer learning concepts step by step. If you prefer
+                        to
+                        learn by doing, check out our practical tutorial. You might find this guide and the tutorial
+                        complementary to each other.</code></p>
+                <ul>
+                    <li>
+                        This is the first chapter in a step-by-step guide about main React concepts. You can find a list
+                        of all its chapters in the navigation sidebar. If you’re reading this from a mobile device, you
+                        can access the navigation by pressing the button in the bottom right corner of your screen.
+                    </li>
+                    <li>
+                        Every chapter in this guide builds on the knowledge introduced in earlier chapters. <b>You can
+                            learn most of React by reading the “Main Concepts” guide chapters in the order they appear
+                            in
+                            the sidebar.</b> For example, “Introducing JSX” is the next chapter after this one.
+                    </li>
+                </ul>
+                <hr>
+                <h1>Let’s Get Started!</h1>
+                <p>Keep scrolling down, and you’ll find the link to the next chapter of this guide right before the
+                    website footer.</p>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Introducing_JSX">
+            <header>Introducing JSX</header>
+            <article>
+                <p>Consider this variable declaration:</p>
+                <img src="images/2.png" alt="">
+                <ul>
+                    <li>
+                        This funny tag syntax is neither a string nor HTML.
+                    </li>
+                    <li>It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React
+                        to describe what the UI should look like. JSX may remind you of a template language, but it
+                        comes with the full power of JavaScript.</li>
+                    <li>
+                        JSX produces React “elements”. We will explore rendering them to the DOM in the next section.
+                        Below, you can find the basics of JSX necessary to get you started.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Rendering_Elements">
+            <header>Rendering Elements</header>
+            <article>
+                <p>
+                    Elements are the smallest building blocks of React apps.
+                </p>
+
+                <p>
+                    An element describes what you want to see on the screen:
+                </p>
+                <img src="images/2.png" alt="">
+                <p>
+                    Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM
+                    takes care of updating the DOM to match the React elements.
+                </p>
+                <h4>Note:</h4>
+                <p><code> One might confuse elements with a more widely known concept of “components”. We will
+                        introduce
+                        components in the next section. Elements are what components are “made of”, and we encourage you
+                        to read this section before jumping ahead.</code></p>
+            </article>
+        </section>
+        <section class="main-section" id="Components_and_Props">
+            <header>Components and Props</header>
+            <article>
+                Components let you split the UI into independent, reusable pieces, and think about each piece in
+                isolation. This page provides an introduction to the idea of components. You can find a detailed
+                component API reference here.
+                <code>Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called
+                    “props”) and return React elements describing what should appear on the screen.
+                </code>
+                <hr>
+            </article>
+            <header>Function and Class Components</header>
+            <article>
+                <p>The simplest way to define a component is to write a JavaScript function:</p>
+                <img src="images/3.png" alt="">
+                <p>This function is a valid React component because it accepts a single “props” (which stands for
+                    properties) object argument with data and returns a React element. We call such components “function
+                    components” because they are literally JavaScript functions.</p>
+            </article>
+        </section>
+        <section class="main-section" id="State_and_Lifecycle">
+            <header>State and Lifecycle</header>
+            <p>
+                This page introduces the concept of state and lifecycle in a React component. You can find a detailed
+                component API reference here.
+            </p>
+            <p>
+                Consider the ticking clock example from one of the previous sections. In Rendering Elements, we have
+                only learned one way to update the UI. We call ReactDOM.render() to change the rendered output:
+            </p>
+            <img src="images/4.png" alt="">
+            <h3><a href="https://codepen.io/gaearon/pen/gwoJZk?editors=0010">Try it on CodePen</a></h3>
+
+            <p>
+                In this section, we will learn how to make the Clock component truly reusable and encapsulated. It will
+                set up its own timer and update itself every second.
+            </p>
+        </section>
+        <section class="main-section" id="Handling_Events">
+            <header>Handling Events</header>
+            <article>
+                Handling events with React elements is very similar to handling events on DOM elements. There are some
+                syntax differences:
+                <ul>
+                    <li>
+                        <code>React events are named using camelCase, rather than lowercase.</code>
+                    </li>
+                    <li>With JSX you pass a function as the event handler, rather than a string.</li>
+                </ul>
+                <p>
+                    For example, the HTML:
+                </p>
+                <img src="images/5.png" alt="">
+            </article>
+        </section>
+        <section class="main-section" id="Conditional_Rendering">
+            <header>Conditional Rendering</header>
+            <article>
+                <p>
+                    In React, you can create distinct components that encapsulate behavior you need. Then, you can
+                    render only some of them, depending on the state of your application.
+                </p>
+
+                <p>
+                    Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript
+                    operators like if or the conditional operator to create elements representing the current state, and
+                    let React update the UI to match them.
+                </p>
+                <p>Consider these two components:</p>
+                <img src="images/6.png" alt="">
+            </article>
+        </section>
+        <section class="main-section" id="Lists_and_Keys">
+            <header>Lists and Keys</header>
+            <article>
+                <p>
+                    <code>First, let’s review how you transform lists in JavaScript.</code>
+                </p>
+                <p>
+                    Given the code below, we use the map() function to take an array of numbers and double their values.
+                    We assign the new array returned by map() to the variable doubled and log it:
+                </p>
+                <img src="images/7.png" alt="">
+            </article>
+        </section>
+        <section class="main-section" id="Forms">
+            <header>Forms</header>
+            <article>
+                <p>
+                    HTML form elements work a bit differently from other DOM elements in React, because form elements
+                    naturally keep some internal state. For example, this form in plain HTML accepts a single name:
+                </p>
+                <img src="images/8.png" alt="">
+                <p>
+                    This form has the default HTML form behavior of browsing to a new page when the user submits the
+                    form. If you want this behavior in React, it just works. But in most cases, it’s convenient to have
+                    a JavaScript function that handles the submission of the form and has access to the data that the
+                    user entered into the form. The standard way to achieve this is with a technique called “controlled
+                    components”.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Lifting_State_Up">
+            <header>Lifting State Up</header>
+            <article>
+                <p>Often, several components need to reflect the same changing data. We recommend lifting the shared
+                    state up to their closest common ancestor. Let’s see how this works in action.
+                </p>
+                <p>In this section, we will create a temperature calculator that calculates whether the water would boil
+                    at a given temperature.
+                </p>
+                <p>
+                    We will start with a component called BoilingVerdict. It accepts the celsius temperature as a prop,
+                    and prints whether it is enough to boil the water:
+                </p>
+                <img src="images/9.png" alt="">
+            </article>
+        </section>
+        <section class="main-section" id="Composition_vs_Inheritance">
+            <header>Composition vs Inheritance</header>
+            <article>
+                <p>React has a powerful composition model, and we recommend using composition instead of inheritance to
+                    reuse code between components.</p>
+                <p>In this section, we will consider a few problems where developers new to React often reach for
+                    inheritance, and show how we can solve them with composition.</p>
+                <hr>
+                <header>Containment</header>
+                <article>
+                    <p>Some components don’t know their children ahead of time. This is especially common for components
+                        like Sidebar or Dialog that represent generic “boxes”.
+                    </p>
+                    <p>We recommend that such components use the special children prop to pass children elements
+                        directly into their output:
+                    </p>
+                    <img src="images/10.png" alt="">
+                </article>
+        </section>
+        <section class="main-section" id="Thinking_in_React">
+            <header>Thinking in React</header>
+            <article>
+                React is, in our opinion, the premier way to build big, fast Web apps with JavaScript. It has scaled
+                very well for us at Facebook and Instagram.
+                <p>One of the many great parts of React is how it makes you think about apps as you build them. In this
+                    document, we’ll walk you through the thought process of building a searchable product data table
+                    using React.</p>
+                <hr>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>
